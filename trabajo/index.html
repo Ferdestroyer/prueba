@@ -1,16 +1,265 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang=es>
+
 	<head>
-		<title>Mi documento </title>
-		<meta charset="utf-8>
+		<link type="text/css" rel="stylesheet" href="estilo.css">
+		<title>Manual de iniciación en html5 y css3 </title>
+		<meta charset="utf-8">
 		<meta name="author" content="Fernando">
 	</head>
 	
 		<body>
-		<p>mi documento</p>
-		<p>segundo parrafo</p>
-			
-			
+			<h1>MANUAL DE INICIACIÓN EN HTML5 Y CSS3</h1>
+			<article id=indice>
+				<h2>Índice</h2>
+				<ol>
+					<li><a href=#intro><i>-Instroducción</i></a></li>
+					<li><a href=#formato><i>-Formato del documento</i></a></li>
+					<li><a href=#nombre><i>-Nombre de la página</i></a></li>
+					<li><a href=#meta><i>-Metadatos</i></a></li>
+					<li><a href=#articulo><i>-Artículo y Sección</i></a></li>
+					<li><a href=#titulo><i>-Los Títulos</i></a></li>
+					<li><a href=#agrupacion><i>-Agrupación del texto</i></a></li>
+					<li><a href=#parrafos><i>-Párrafos</i></a></li>
+					<ol>
+						<li><a href=#preformateado><i>-Texto preformateado</i></a></li>
+						<li><a href=#listas><i>-Listas</i></a></li>
+					</ol>
+					<li><a href=#horizontal><i>-Línea horizontal</i></a></li>
+					<li><a href=#semantico><i>-Elementos semánticos del texto</i></a></li>
+					<ol>
+						<li><a href=#resaltado><i>-El resaltado</i></a></li>
+						<li><a href=#saltolinea><i>-El salto de linea</i></a></li>
+						<li><a href=#hiperenlace><i>-El hiperenlace</i></a></li>
+					</ol>
+					<li><a href=#imagen><i>-Contenido encajado: imágenes</i></a></li>
+					<ol>
+						<li><a href=#imagengeneral><i>-Contenido general</i></a></li>
+						
+					</ol>
+					<li><a href=#simbolos><i>-Símbolos especiales</i></a></li>
+					<li><a href=#tablas><i>-Datos tabulados: Tablas</i></a></li>
+				</ol>
+
+
+			</article>
+			<article id=contenido>
+				<section id=intro>
+					<h2>Introdución</h2>
+					<p>En este documento aprenderemos el manejo básico de los lenguajes de marcas HTML5 y CSS3</p>
+					<p>La sintaxis de elementos de HTML5 es &lt;elemento> &lt;/elemento> , el primero es para abrir el elemento y el segundo para cerrarlo, algunos elementos especificos no es necesario cerrarlos.
+				</section>
+				<section id=formato>
+					<h2>Formato del documento</h2>
+					<p>Lo primero que tenemos que hacer a la hora de crear un documento es especificar de que tipo de documento se trata para que el navegador web pueda interpretarlo para ello nuestra primera línea de código debe contener lo siguiente:</p>
+					<p><b>&lt;!doctype html></b></p>
+					<p>Con eso decimos al navegador que el documento es de tipo html</p>
+					<p>A continuación debemos especificar el inicio del documento con el idioma de la página &lt;html lang="idioma">, una cabecera &lt;head>, un cuerpo &lt;body></p>
+					<p>&lt;!doctype html><br><b>&lt;html lang=“es”></br>&lt;head><br>&lt;/head></br>&lt;body><br>&lt;/body></br>&lt;/html></b></p>
+				</section>
+				<section id=nombre>
+					<h2>Nombre de la página</h2>
+					<p>El nombre del documento que veremos en la pestaña del navegador:</p>
+					<p>&lt;!doctype html><br>&lt;html lang=“es”></br>&lt;head><br><b>&lt;title>el nombre de mi documento&lt;/title></b></br>&lt;/head><br>&lt;body></br>&lt;/body><br>&lt;/html></br></p>
+				</section>
+				<section id=meta>
+					<h2>Metadatos</h2>
+					<p>Utilizados para incluir cualquier información relevante de la propia página, por ejemplo la codificación de caracteres utilizada y el nombre del autor. Los metadatos no hay que cerrarlos</p>
+					<p>&lt;!doctype html><br>&lt;html lang=“es”></br>&lt;head><br>&lt;title>documento de prueba&lt;/title><br><b>&lt;meta charset="utf-8"></br>&lt;meta name="author" content="nombre del autor"></b><br>&lt;/head></br>&lt;body><br>&lt;/body></br>&lt;/html></p>
+				</section>
+				<section id=articulo>
+					<h2>Artículo y Sección</h2>
+					<p>Los artículos y secciones son una forma de dividir el documento en distintas partes, un artículo puede tener una  varias secciones, pero una seccion puede contener un artículo o varios. Su estructura es la siguiente:</p>
+					<p><b>&lt;article><br>&lt;section></br>&lt;article><br>&lt;/article></br>&lt;article><br>&lt;/article></br>&lt;/section><br>&lt;/article></br></b></p>
+				</section>
+				<section id=titulo>
+					<h2>Los títulos</h2>
+					<p>Utilizados para crear títulos a los apartados la sintaxsis es &lt;hnumero>texto&lt;/hnumero> el numero puede ser de 1 a 6 que determinará el nivel del texto:</p>
+					<h1>nivel 1</h1>
+					<h2>nivel 2</h2>
+					<h3>nivel 3</h3>
+					<h4>nivel 4</h4>
+					<h5>nivel 5</h5>
+					<h6>nivel 6</h6>
+				</section>
+				<section id=agrupacion>
+					<h2>Agrupación del texto</h2>
+					<article id=parrafos>
+						<h3>Párrafos</h3>
+						<p>El texto en html se divide mediante parrafos &lt;p>texto&lt;/p></p>
+						<p>Este es el primer parrafo</p>
+						<p>Este es el segundo parrafo</p>
+					</article>
+					<article id=preformateado>
+						<h3>Texto Preformateado</h3>
+						<p>El texto preformateado &lt;pre> aparecerá el texto con el mismo formato utilizando un tipo de letra monoespaciada:
+<pre>
+puedo poner el texto que yo quiera
+	sin necesidad de saltos de linea
+			 
+		incluso puedo dejar espacios entre lineas
+</pre>
+					</article>
+					<article id=listas>
+						<h3>Listas</h3>
+						<p>Como su nombre indica es para hacer listas &lt;li> y pueden ser ordenadas &lt;ol> o desordenadas &lt;ul>, las listas van dentro de ordenadas o desordenadas. La listas ordenadas las ordena por defecto con un número delante del elemento de la lista, se puede especificar que empiece por un numero &lt;ol start=numero> o por tipo de orden &lt;ol type=elemento>
+			 
+						<ul>
+							<li>lista desordenada</li>
+							<li>sin ningun</li>
+							<li>tipo de</li>
+							<li>ordenacion</li>
+						</ul>
+			 
+						<ol type=a>
+							<li>lista ordenada</li>
+							<li>que usa</li>
+							<li>ordenacion</li>
+							<li>alfabética</li>
+						</ol>
+			 
+					</article>
+				</section>
+				<section id=horizontal>
+					<h2>Línea horizontal</h2>
+					<p>Utilizada visualmente para dividir &lt;hr> esta etiqueta no debe ser cerrada</p>
+					<p>Parrafo1</p>
+					<hr>
+					<p>Parrafo2</p>
+				</section>
+				<section id=semantico>
+					<h2>Elementos semánticos</h2>
+					<article id=resaltado>
+						<h3>El resaltado</h3>
+						<p>STRESS EMPHASIS: &lt;em><p>
+						<p>Recalca una "<em>parte del texto</em>"</p>
+						<p>STRONG &lt;strong></p>
+						<p>El texto tiene mucho contenido pero podemos destacar "<strong>la parte que realmente nos importa</strong>"</p>
+						<p>SMALL &lt;small></p>
+						<p>La utilizaremos cuando queramos usar la letra "<small>pequeña</small>" para un contrato</p>
+						<p>S &lt;s></p>
+						<p>sirve para representar contenido irrelevante u obsoleto <s>esta mañana he desayunado chocolate con churros</s></p>
+						<p>Bastardilla &lt;i></p>
+						<p><i>Para mostrar el texto en cursiva</i><p>
+						<p>Negrita &lt;b></p>
+						<p><b>Texto en negrita</b></p>
+						<p>Subrayado &lt;u></p>
+						<p><u>Texto subrayado</u></p>
+					</article>
+					<article id=saltolinea>
+						<h3>Salto de línea &lt;br> y &lt;wbr></h3>
+						<p>el texto pueden tener saltos de linea con &lt;br>texto para salto de linea&lt;/br>:</p>
+						<p>Esto es un texto con un <br>salto de linea</br></p>
+						<p>Si el texto es muy largo con &lt;wbr si una palabra o texto no cabe salta al a siguiente linea</p>
+						<p>Aqui empieza el texto largo: <wbr>"Y este es un texto super largo pero ajustado lqjhwpiowjeqfpoiwqejcpwqoiemcpwqoeimwpioecmwpqoeimcwpqeoicmwpeicomwqpeoicmwqY este es un texto super largo pero ajustaod lqjhwpiowjeqfpoiwqejcpwqoiemcpwqoeimwpioecmwpqoeimcwpqeoicmwpeicomwqpeoicmwqepocimwqepiocmwepcoimwqepoicmwqpeoicmwpoqimc"</wbr></p>
+					</article>
+					<article id=hiperenlace>
+						<h3>El hiperenlace &lt;a href=""></h3>
+						<p>Utilizado para enlazar direcciones, por ejemplo si haces click <a href="http://www.google.es">Aquí</a> te llevará a google</p>
+						<p>Los enlaces pueden ser absolutos (especificando la ruta completa o dirección del contenido a enlazar) o relativo en caso del mismo directorio pondremos solo el nombre del archivo, si está en un subdirectorio "subdirectorio/archivo" y si está en el directorio anterior "../archivo"</p>
+						<p>Absoluto: <a href="http://www.google.es">Google</a>
+						<p>Relativo: <a href="relativo.jpg">¡Pinchame si!</a>
+						<p>Hiperenlace interno &lt;a href=#eltoX></p>
+						<p>Utilizado para enlazar partes internas del documento, si pones #top te lleva al principio del documento, para poder enlazar las partes internas a los elementos hay que asignarles una id &lt;elto id=eltoX></p>
+						<p><a href=#top>Principio del documento</a></p>
+						<p><a href=#intro>Introducion</a></p>
+						<p>Atributos para hiperenlace:</p>
+						<ul>
+							<li>descarga | download:</li>
+							<li>target | target=blank -----> Abrir en una nueva pestaña</li>
+						</ul>
+						<p><a href download>descargar documento</a></p>
+						<p><a href target=blank>Abrir este documento en una nueva pestaña</a></p>
+					</article>
+				</section>
+				<section id=imagen>
+					<article id=imagengeneral>
+						<h2>Contenido encajado: imágenes &lt;img></h2>
+						<p>Entre los tipos de imágen tenemos los bimap estáticos (PNG, GIF, JPG), documentos vectoriales (SVG), animados (APNG, GIF) y otros (PDF, MNG)</p>
+						<p>Estática:</p>
+						<img src="estatica.jpg" alt="puesta de sol"></img>
+						<p>Vectorial:</p>
+						<img src="vectorial.svg" alt="leon y tigre"></img>
+						<p>Animada:</p>
+						<img src="animado.gif" alt="scotty ordenador"></img>
+						<p>Atributos de una imagen:</p>
+						<ul>
+							<li>Origen: src="ruta del a imagen"</li>
+							<li>Ancho: width=tamaño</li>
+							<li>Alto: height=tamaño</li>
+							<li>Texto alternativo alt="texto" muestra un texto si no puede visualizarse la imagen, es obligatorio ponerlo en todas las imágenes, el texto debe describir la imagen</li>
+						</ul>
+					</article>
+					<article id=mapaimagen>
+						<h3>Mapas de imagen</h3>
+						<p>Los mapas de imágen son imágenes en las cuales hemos introducido enlaces según las coordenadas</p>
+						<p>Para utilizar una imágen con mapeado debemos añadirle la etiqueta usemap="#idmapa", después tenemso que usar la etiqueta &lt;map> con el atributo name=idmapa que hemos asignado anteriormente a la imágen</p>
+						<p>Dentro del mapa tenemos que asignar las areas que queremos asignarles un enlace con le etiqueta &lt;area>, esta etiqueta puede tenerl os siguientes atributos:</p>
+						<ul>
+							<li>shape: la forma del área que queremos poner el enlace puede ser default, rect, circle y poly</li>
+							<li>coords: coordenadas separadas por comas</li>
+							<li>href: enlace asociado</li>
+							<li>alt: texto alternativo</li>
+							<li>download</li>
+							<li>target</li>
+						</ul>
+						<p>Un ejemplo de un mapa de imágen, las areas están definidas en los nombres de las comunidades (Galicia, Asturias, Cantabria)</p>
+						<img src="mapaimagen.gif" alt="mapa españa" usemap="#mapaimagen"/>
+						<map name="mapaimagen"> 
+							<area alt="Galicia"  href="https://es.wikipedia.org/wiki/Galicia" shape="rect" coords="301,118,360,139,"/>
+							<area alt="Asturias" href="https://es.wikipedia.org/wiki/Asturias" shape="rect" coords="450,59,527,80,"/>
+							<area alt="Cantabria" href="https://es.wikipedia.org/wiki/Cantabria" shape="rect" coords="627,63,709,82,"/>
+						</map> 
+					</article>
+				</section>
+				<section id=simbolos>
+					<h2>Símbolos especiales</h2>
+					<p>Utilizados para representar caracteres especiales, <a href="https://dev.w3.org/html5/html-author/charref">Aqui</a> la lista de todos ellos</p>
+				</section>
+				<section id=tablas>
+					<h2>Datos tabulados: tablas</h2>
+					<p>Para representar una tabla lo primero que tenemos que hacer es crear el elemento &lt;table>, dentro del elemento table hay que definir las filas &lt;tr> y dentro de las filas hay que definir las columnas &lt;td>, la tabla puede contener cabeceras &lt;thead> tanto en filas como en columnas</p>
+					<table>
+						<tr>
+							<th>dias de la semana</th>
+							<th>Lunes</th>
+							<th>Martes</th>
+							<th>Miercoles</th>
+							<th>Jueves</th>
+							<th>Viernes</th>
+							<th>Sabado</th>
+							<th>Domingo</th>
+						</tr>
+						<tr>
+							<th>semana 1</th>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<th>semana 2</th>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+						</tr>
+					</table>
+					<p>las tablas pueden contener un encabezado &lt;thead>, un cuerpo &lt;tbody>, un sumario &lt;tfoot> y una leyenda &lt;caption></p>
+					<p>Los atributos de una tabla son:</p>
+						<ul>
+							<li>Borde: border ; utilizado en table</li>
+							<li>Expansión en columna: rowspan</li>
+							<li>Expansión en fila: colspan</li>
+						</ul>					
+				</section>
+			</article>
 		</body>
 		
 	
